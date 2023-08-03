@@ -1,0 +1,39 @@
+{
+  "name": "mernstack-authentication",
+  "version": "1.0.0",
+  "description": "mern-stack authentication app latest.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "frontend": "npm run dev --prefix frontend",
+    "app": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rooneyrulz/mernstack-authentication.git"
+  },
+  "keywords": [
+    "mern-stack-auth"
+  ],
+  "author": "rooneyrulz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rooneyrulz/mernstack-authentication/issues"
+  },
+  "homepage": "https://github.com/rooneyrulz/mernstack-authentication#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
